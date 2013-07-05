@@ -29,6 +29,12 @@ noremap <F2> :set paste!<cr>
 " change pwd
 noremap <Leader>cd :lcd %:p:h<cr>:pwd<CR>
 
+" Awesome multiple cursor mappings
+" Select a range in visual mode then replace the word under your cursor
+vnoremap <Leader>n :MultipleCursorsFind <C-R><C-W><CR>
+" Change the word under your cursor across the entire file
+nnoremap <Leader>n :MultipleCursorsFind <C-R><C-W><CR>
+
 
 
 " Window Navigation ------------------------------------------------------------

@@ -22,6 +22,8 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Shougo/neocomplete.vim'
 
+NeoBundle 'terryma/vim-multiple-cursors'
+
 " Navigation
 NeoBundle 'scrooloose/nerdtree'
 
