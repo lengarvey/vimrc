@@ -21,11 +21,15 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 
 " Navigation
 NeoBundle 'scrooloose/nerdtree'
+
+" Command dispatch/background
+NeoBundle 'tpope/vim-dispatch'
 
 " Language
 NeoBundle 'tpope/vim-rails'
