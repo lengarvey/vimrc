@@ -12,9 +12,11 @@ set hidden                         " Allow hiding buffers with unsaved changes
 set wildmenu                       " Make tab completion act more like bash
 set wildmode=list:longest          " Tab complete to longest common string, like bash
 set showcmd                        " Display an incomplete command in the lower right corner
-set showmode                       " Show current mode down the bottom
 set laststatus=2                   " Always show the status line
 set ignorecase                     " searches are case insensitive...
 set smartcase                      " ... unless they contain at least one capital letter
 set backspace=2                    " because backspace should work properly
+set noshowmode                     " because we use powerline
 
+" Wrapping in quickfix windows is probably a good idea
+autocmd FileType qf setlocal wrap linebreak

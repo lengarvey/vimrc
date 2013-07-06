@@ -1,5 +1,6 @@
 " CtrlP search
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" call unite#filters#sorter_default#use(['sorter_rank'])
 nnoremap <C-p> :Unite -start-insert -winheight=10 file_rec/async<cr>
 nnoremap <C-m> :Unite -start-insert -winheight=10 file_mru<cr>
 
@@ -31,9 +32,9 @@ noremap <Leader>cd :lcd %:p:h<cr>:pwd<CR>
 
 " Awesome multiple cursor mappings
 " Select a range in visual mode then replace the word under your cursor
-vnoremap <Leader>n :MultipleCursorsFind <C-R><C-W><CR>
+vnoremap <Leader>v :MultipleCursorsFind <C-R><C-W><CR>
 " Change the word under your cursor across the entire file
-nnoremap <Leader>n :MultipleCursorsFind <C-R><C-W><CR>
+nnoremap <Leader>v :MultipleCursorsFind <C-R><C-W><CR>
 
 
 
