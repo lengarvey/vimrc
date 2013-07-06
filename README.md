@@ -28,23 +28,23 @@ See [this blog post](http://mitchmckenna.com/post/11527/setting-up-vim-powerline
 
 ### [CtrlP](https://github.com/kien/ctrlp.vim) like file navigation using [Unite](https://github.com/Shougo/unite.vim):
 
-![Ctrlp like](http://i.imgur.com/Z08RZn8.gif)
+![Ctrlp like](http://i.imgur.com/aSTJmZw.gif)
 
 ### Recently modified files filtered (uses Unite):
 
-![file_mru](http://i.imgur.com/eCt9WJQ.gif)
+![file_mru](http://i.imgur.com/NTuTqRq.gif)
 
 Press either Ctrl-m or just enter in normal mode to access this.
 
 ### Buffer browsing and filtering (uses Unite...):
 
-![buffers](http://i.imgur.com/PGVn7u0.gif)
+![buffers](http://i.imgur.com/wDvlG91.gif)
 
 Press `<Leader>b` to access this one.
 
 ### [Multiple cursors](https://github.com/terryma/vim-multiple-cursors) just like in Sublime:
 
-![Multiple cursors](http://i.imgur.com/N1cG8q5.gif)
+![Multiple cursors](http://i.imgur.com/yJpI69g.gif)
 
 Here I press `<Leader>v` then `c` and then refactor some crappy Ruby code followed by `Esc` to go back to normal mode.
 
