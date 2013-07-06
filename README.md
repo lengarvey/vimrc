@@ -22,9 +22,9 @@ See [this blog post](http://mitchmckenna.com/post/11527/setting-up-vim-powerline
 
 ## Features
 
-Uses the excellent NeoBundle to manage plugins.
-Customised for fast Ruby and Rails development.
-Custom 
+* Uses the excellent NeoBundle to manage plugins.
+* Customised for fast Ruby and Rails development.
+* Custom compiled Source Code Pro font to save you from compiling it yourself.
 
 ### [CtrlP](https://github.com/kien/ctrlp.vim) like file navigation using [Unite](https://github.com/Shougo/unite.vim):
 
@@ -34,11 +34,19 @@ Custom
 
 ![file_mru](http://i.imgur.com/eCt9WJQ.gif)
 
+Press either Ctrl-m or just enter in normal mode to access this.
+
+### Buffer browsing and filtering (uses Unite...):
+
+![buffers](http://i.imgur.com/PGVn7u0.gif)
+
+Press `<Leader>b` to access this one.
+
 ### [Multiple cursors](https://github.com/terryma/vim-multiple-cursors) just like in Sublime:
 
 ![Multiple cursors](http://i.imgur.com/N1cG8q5.gif)
 
-Here I press `<Leader>v` and then refactor some crappy Ruby code.
+Here I press `<Leader>v` then `c` and then refactor some crappy Ruby code followed by `Esc` to go back to normal mode.
 
 ### Async test running keybinds are coming soon. 
 In the meantime just watch how awesome vim-dispatch is:
