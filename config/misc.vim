@@ -19,4 +19,4 @@ set backspace=2                    " because backspace should work properly
 set noshowmode                     " because we use powerline
 
 " Wrapping in quickfix windows is probably a good idea
-autocmd FileType qf setlocal wrap linebreak
+" autocmd FileType qf setlocal wrap linebreak

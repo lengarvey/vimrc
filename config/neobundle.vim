@@ -47,6 +47,7 @@ NeoBundle 'yaymukund/vim-rabl'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle "pangloss/vim-javascript"
+NeoBundle 'vim-ruby/vim-ruby'
 
 " Colours
 NeoBundle 'twe4ked/vim-colorscheme-switcher'
