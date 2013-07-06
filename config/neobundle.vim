@@ -19,7 +19,7 @@ NeoBundle 'Lokaltog/vim-powerline'
 
 " Editing
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'bitc/vim-bad-whitespace'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-surround'
 
