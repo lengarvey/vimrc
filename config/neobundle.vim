@@ -27,8 +27,10 @@ NeoBundle 'Lokaltog/vim-powerline'
 " Editing
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'bitc/vim-bad-whitespace'
-NeoBundle 'Shougo/neocomplete.vim'
+" NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-endwise'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 

@@ -2,7 +2,7 @@
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " call unite#filters#sorter_default#use(['sorter_rank'])
 nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
-nnoremap <silent> <C-m> :Unite -start-insert -buffer-name=recent -winheight=10 file_mru<cr>
+nnoremap <silent> <Leader>m :Unite -start-insert -buffer-name=recent -winheight=10 file_mru<cr>
 
 " Buffer nav
 nnoremap <Leader>b :Unite -start-insert -buffer-name=buffers -winheight=10 buffer<cr>
@@ -70,6 +70,8 @@ vmap <Right> <Esc><Esc>gv
 nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
 
 " testing
+" running these commands inside a spec file will run the test or the test
+" on line as expected. Outside a spec file it will attempt to run the
+" previous run test. It's a simple focus.
 map <Leader>r :call RunCurrentTest()<CR>
 map <Leader>R :call RunCurrentLineInTest()<CR>
-map <Leader>p :call RunCurrentLineInTest()<CR>
