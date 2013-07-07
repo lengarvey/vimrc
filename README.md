@@ -48,7 +48,18 @@ Press `<Leader>b` to access this one.
 
 Here I press `<Leader>v` then `c` and then refactor some crappy Ruby code followed by `Esc` to go back to normal mode.
 
-### Async test running keybinds are coming soon. 
-In the meantime just watch how awesome vim-dispatch is:
+### Async test running
 
-<iframe src="http://player.vimeo.com/video/63116209" width="500" height="323" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/63116209">Introducing dispatch.vim</a> from <a href="http://vimeo.com/tpope">Tim Pope</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+![test running](http://i.imgur.com/zqLuodS.gif)
+
+Here I run a test async using [vim-dispatch](https://github.com/tpope/vim-dispatch) and tmux. Pressing `<Leader>r` will run my spec and the results
+are nicely formatted in a quickfix window once the test has finished. You can navigate to points in the stacktrace
+using standard quickfix commands (`:cfirst`, `:cnext` etc) or by switching to that split and hitting enter. 
+Pressing `<Leader>R` runs a test focused on a particular line.
+
+It also remembers what test was previously run, this means I can switch over to the code and it will remember which test
+I ran previously supporting a focused test style workflow. In non-test code hitting `<Leader>r` or `<Leader>R` has the
+same effect, it just re-runs the previous test.
+
+
+
