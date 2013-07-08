@@ -22,7 +22,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 
 " Visual
-NeoBundle 'Lokaltog/vim-powerline'
+" NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'bling/vim-airline'
 
 " Editing
 NeoBundle 'tomtom/tcomment_vim'
@@ -50,10 +51,10 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle "pangloss/vim-javascript"
 NeoBundle 'vim-ruby/vim-ruby'
-
-" Colours
-NeoBundle 'twe4ked/vim-colorscheme-switcher'
-NeoBundle 'altercation/vim-colors-solarized'
+" 
+" " Colours
+" NeoBundle 'twe4ked/vim-colorscheme-switcher'
+" NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nanotech/jellybeans.vim'
 
 filetype plugin indent on     " Required!
