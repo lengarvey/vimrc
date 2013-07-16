@@ -8,7 +8,7 @@ nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 fi
 nnoremap <silent> <Leader>m :Unite -start-insert -buffer-name=recent -winheight=10 file_mru<cr>
 
 " Buffer nav
-nnoremap <Leader>b :Unite -start-insert -buffer-name=buffers -winheight=10 buffer<cr>
+nnoremap <Leader>b :Unite -buffer-name=buffers -winheight=10 buffer<cr>
 
 " Unite on the bottom
 let g:unite_split_rule = 'botright'
