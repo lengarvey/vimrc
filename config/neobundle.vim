@@ -21,6 +21,8 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 
+NeoBundle 'kien/ctrlp.vim'
+
 " Visual
 " NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'bling/vim-airline'
@@ -37,6 +39,8 @@ NeoBundle 'terryma/vim-multiple-cursors'
 
 " Navigation
 NeoBundle 'scrooloose/nerdtree'
+
+NeoBundle 'thoughtbot/vim-rspec'
 
 " Command dispatch/background
 NeoBundle 'tpope/vim-dispatch'
@@ -55,7 +59,9 @@ NeoBundle 'vim-ruby/vim-ruby'
 " " Colours
 " NeoBundle 'twe4ked/vim-colorscheme-switcher'
 " NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'nanotech/jellybeans.vim'
+" NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'chriskempson/base16-vim'
 
 filetype plugin indent on     " Required!
 "

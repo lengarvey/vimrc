@@ -23,13 +23,13 @@ class VimFormatter < RSpec::Core::Formatters::BaseTextFormatter
   private
 
   def format_message msg
-    msg.gsub("\n", ' ')[0,80]
+    msg.gsub('\\n', "\n").gsub(/[\n]+/, ' ').gsub(/[ ]+/, ' ')
   end
 
   def remove_spec_from_backtrace(backtrace, spec_path)
     custom_format_backtrace(backtrace).reject { |line|
       line.match(/#{spec_path}/)
-    }.reverse
+    }
   end
 
   def custom_format_backtrace(backtrace)

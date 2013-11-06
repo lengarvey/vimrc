@@ -27,3 +27,8 @@ elseif executable('ack-grep')
 endif
 
 runtime macros/matchit.vim
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+let g:rspec_command = "Dispatch rspec {spec}"

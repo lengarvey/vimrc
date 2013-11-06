@@ -1,11 +1,12 @@
 " CtrlP search
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
+" call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" call unite#filters#sorter_default#use(['sorter_rank'])
 
 " call unite#custom#source('file_rec/async','sorters','sorter_rank')
-nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
+" replacing unite with ctrl-p
+" nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 
-nnoremap <silent> <Leader>m :Unite -start-insert -buffer-name=recent -winheight=10 file_mru<cr>
+nnoremap <silent> <Leader>m :Unite -buffer-name=recent -winheight=10 file_mru<cr>
 
 " Buffer nav
 nnoremap <Leader>b :Unite -buffer-name=buffers -winheight=10 buffer<cr>
@@ -22,7 +23,7 @@ nnoremap <Leader>y :Unite history/yank<cr>
 
 " Bookmark a file for Unite
 noremap <Leader>bb :UniteBookmarkAdd<cr>
-noremap <C-b> :Unite -start-insert -winheight=10 bookmark<cr>
+noremap <Leader>B :Unite -winheight=10 bookmark<cr>
 
 " Nerdtree
 noremap <Leader>n :NERDTreeToggle<cr>
@@ -76,5 +77,10 @@ nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
 " running these commands inside a spec file will run the test or the test
 " on line as expected. Outside a spec file it will attempt to run the
 " previous run test. It's a simple focus.
-map <Leader>r :call RunCurrentTest()<CR>
-map <Leader>R :call RunCurrentLineInTest()<CR>
+" map <Leader>r :call RunCurrentTest()<CR>
+" map <Leader>R :call RunCurrentLineInTest()<CR>
+
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
