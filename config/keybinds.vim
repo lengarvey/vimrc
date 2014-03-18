@@ -1,10 +1,9 @@
 " CtrlP search
-" call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" call unite#filters#sorter_default#use(['sorter_rank'])
-
-" call unite#custom#source('file_rec/async','sorters','sorter_rank')
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#custom#source('file_rec/async','sorters','sorter_rank')
 " replacing unite with ctrl-p
-" nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
+nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 
 nnoremap <silent> <Leader>m :Unite -buffer-name=recent -winheight=10 file_mru<cr>
 
@@ -80,7 +79,9 @@ nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
 " map <Leader>r :call RunCurrentTest()<CR>
 " map <Leader>R :call RunCurrentLineInTest()<CR>
 
-map <Leader>r :call RunCurrentSpecFile()<CR>
-map <Leader>R :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>r :wa<CR>:call RunCurrentSpecFile()<CR>
+map <Leader>R :wa<CR>:call RunNearestSpec()<CR>
+map <Leader>l :wa<CR>:call RunLastSpec()<CR>
+map <Leader>a :wa<CR>:call RunAllSpecs()<CR>
+
+map <silent> <F4> :set number!<CR>

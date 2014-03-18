@@ -7,6 +7,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+
 " I like my searches to be faster
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -20,8 +21,9 @@ NeoBundle 'Shougo/vimproc', {
 " Now for some bundles
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 
-NeoBundle 'kien/ctrlp.vim'
+" NeoBundle 'kien/ctrlp.vim'
 
 " Visual
 " NeoBundle 'Lokaltog/vim-powerline'
@@ -34,6 +36,7 @@ NeoBundle 'bitc/vim-bad-whitespace'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'godlygeek/tabular'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 
@@ -55,6 +58,7 @@ NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle "pangloss/vim-javascript"
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'Keithbsmiley/rspec.vim'
 " 
 " " Colours
 " NeoBundle 'twe4ked/vim-colorscheme-switcher'

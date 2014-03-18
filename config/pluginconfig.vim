@@ -32,3 +32,18 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 let g:rspec_command = "Dispatch rspec {spec}"
+
+
+
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()
+  " Overwrite settings.
+  imap <buffer> jj      <Plug>(unite_insert_leave)
+  "imap <buffer> <C-w>     <Plug>(unite_delete_backward_path)
+  nmap <buffer><ESC>    <Plug>(unite_exit)
+
+  imap <buffer> <TAB>   <Plug>(unite_select_next_line)
+
+  " Runs "split" action by <C-s>.
+  nmap <buffer><expr> s  unite#do_action('vsplit')
+endfunction
