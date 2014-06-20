@@ -3,27 +3,28 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#custom#source('file_rec/async','sorters','sorter_rank')
 call unite#custom#source('file_rec/async','ignore_pattern','vendor/cache\|\.git')
-" replacing unite with ctrl-p
-nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 
-nnoremap <silent> <Leader>m :Unite -buffer-name=recent -winheight=10 file_mru<cr>
+" replacing unite with ctrl-p
+nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async -prompt-direction=top<cr>
+
+nnoremap <silent> <Leader>m :Unite -buffer-name=recent -winheight=10 file_mru -prompt-direction=top<cr>
 
 " Buffer nav
-nnoremap <Leader>b :Unite -buffer-name=buffers -winheight=10 buffer<cr>
+nnoremap <Leader>b :Unite -buffer-name=buffers -winheight=10 buffer -prompt-direction=top<cr>
 
 " Unite on the bottom
 let g:unite_split_rule = 'botright'
 
 " Grep
-nnoremap <Leader>f :Unite grep:.<cr>
+nnoremap <Leader>f :Unite grep:. -prompt-direction=top<cr>
 
 " Yank history
 let g:unite_source_history_yank_enable = 1
-nnoremap <Leader>y :Unite history/yank<cr>
+nnoremap <Leader>y :Unite history/yank -prompt-direction=top<cr>
 
 " Bookmark a file for Unite
 noremap <Leader>bb :UniteBookmarkAdd<cr>
-noremap <Leader>B :Unite -winheight=10 bookmark<cr>
+noremap <Leader>B :Unite -winheight=10 bookmark -prompt-direction=top<cr>
 
 " Nerdtree
 noremap <Leader>n :NERDTreeToggle<cr>
