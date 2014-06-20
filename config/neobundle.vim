@@ -42,6 +42,7 @@ NeoBundle 'terryma/vim-multiple-cursors'
 
 " Navigation
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'markgandolfo/nerdtree-wget.vim'
 
 NeoBundle 'thoughtbot/vim-rspec'
 
@@ -59,13 +60,16 @@ NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle "pangloss/vim-javascript"
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'Keithbsmiley/rspec.vim'
-" 
+NeoBundle 'mustache/vim-mustache-handlebars'
+
+"
 " " Colours
 " NeoBundle 'twe4ked/vim-colorscheme-switcher'
 " NeoBundle 'altercation/vim-colors-solarized'
 " NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'chriskempson/base16-vim'
+" NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'vim-scripts/candy.vim'
 
 filetype plugin indent on     " Required!
 "

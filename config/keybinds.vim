@@ -2,6 +2,7 @@
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#custom#source('file_rec/async','sorters','sorter_rank')
+call unite#custom#source('file_rec/async','ignore_pattern','vendor/cache\|\.git')
 " replacing unite with ctrl-p
 nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 file_rec/async<cr>
 
@@ -85,3 +86,7 @@ map <Leader>l :wa<CR>:call RunLastSpec()<CR>
 map <Leader>a :wa<CR>:call RunAllSpecs()<CR>
 
 map <silent> <F4> :set number!<CR>
+
+" copying
+vmap <silent><Leader>x :w !pbcopy<CR><CR>
+nmap <Leader>pp :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
