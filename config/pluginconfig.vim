@@ -47,3 +47,13 @@ function! s:unite_my_settings()
   " Runs "split" action by <C-s>.
   nmap <buffer><expr> s  unite#do_action('vsplit')
 endfunction
+
+autocmd FileType unite call s:fix_whitespace()
+function! s:fix_whitespace()
+  autocmd InsertEnter <buffer> match none BadWhitespace
+  autocmd InsertLeave <buffer> match none BadWhitespace
+endfunction
+
+
+let g:airline_theme='simple'
+

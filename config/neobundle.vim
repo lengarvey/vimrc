@@ -66,9 +66,9 @@ NeoBundle 'mustache/vim-mustache-handlebars'
 " " Colours
 " NeoBundle 'twe4ked/vim-colorscheme-switcher'
 " NeoBundle 'altercation/vim-colors-solarized'
-" NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'flazz/vim-colorschemes'
-" NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'lengarvey/base16-vim'
 NeoBundle 'vim-scripts/candy.vim'
 
 filetype plugin indent on     " Required!
