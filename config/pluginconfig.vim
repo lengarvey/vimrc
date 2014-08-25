@@ -30,9 +30,13 @@ runtime macros/matchit.vim
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
 let g:rspec_command = "Dispatch rspec {spec}"
 
+let g:vroom_use_dispatch = 1
+let g:vroom_use_colors = 0
+
+let g:dispatch_compilers = {
+  \ 'bundle exec': ''}
 
 
 autocmd FileType unite call s:unite_my_settings()
@@ -54,6 +58,5 @@ function! s:fix_whitespace()
   autocmd InsertLeave <buffer> match none BadWhitespace
 endfunction
 
-
-let g:airline_theme='simple'
-
+" force quickfix to take up all the bottom of the screen
+autocmd FileType qf wincmd J

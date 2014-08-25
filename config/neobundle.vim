@@ -43,11 +43,15 @@ NeoBundle 'terryma/vim-multiple-cursors'
 " Navigation
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'markgandolfo/nerdtree-wget.vim'
+NeoBundle 'christoomey/vim-tmux-navigator'
 
-NeoBundle 'thoughtbot/vim-rspec'
 
 " Command dispatch/background
 NeoBundle 'tpope/vim-dispatch'
+
+" Test running
+" NeoBundle 'thoughtbot/vim-rspec'
+NeoBundle 'skalnik/vim-vroom'
 
 " Language
 NeoBundle 'tpope/vim-rails'
@@ -70,6 +74,9 @@ NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'lengarvey/base16-vim'
 NeoBundle 'vim-scripts/candy.vim'
+
+" plugin tools
+NeoBundle 'vim-scripts/Decho'
 
 filetype plugin indent on     " Required!
 "

@@ -15,3 +15,5 @@ endfunction
 
 syntax enable
 colorscheme base16-tomorrow
+
+let g:airline_theme='badwolf'
