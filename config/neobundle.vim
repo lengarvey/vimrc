@@ -23,6 +23,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 
+NeoBundle 'sgur/unite-qf'
 " NeoBundle 'kien/ctrlp.vim'
 
 " Visual
@@ -41,10 +42,10 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'terryma/vim-multiple-cursors'
 
 " Navigation
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'markgandolfo/nerdtree-wget.vim'
-NeoBundle 'christoomey/vim-tmux-navigator'
-
+" NeoBundle 'Shougo/vimfiler.vim'
+" NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-vinegar'
+" NeoBundle 'markgandolfo/nerdtree-wget.vim'
 
 " Command dispatch/background
 NeoBundle 'tpope/vim-dispatch'

@@ -29,7 +29,7 @@ noremap <Leader>bb :UniteBookmarkAdd<cr>
 noremap <Leader>B :Unite -winheight=10 bookmark -prompt-direction=top<cr>
 
 " Nerdtree
-noremap <Leader>n :NERDTreeToggle<cr>
+noremap <Leader>n <Plug>VinegarUp<CR>
 
 " paste toggle
 noremap <F2> :set paste!<cr>
@@ -93,3 +93,5 @@ map <silent> <F4> :set number!<CR>
 " copying
 vmap <silent><Leader>x :w !pbcopy<CR><CR>
 nmap <Leader>pp :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+
+imap jj <Esc>

@@ -2,12 +2,12 @@
 let g:tcommentMapLeaderOp1 = '<Leader>c'
 
 " NERDTree
-let g:loaded_netrw = 1                      " Disable netrw
-let g:loaded_netrwPlugin = 1                " Disable netrw
-let g:NERDTreeHijackNetrw = 0               " Hijack netrw
-let g:NERDTreeShowLineNumbers = 0           " Disable line numbers
-let g:NERDTreeMinimalUI = 1                 " Disable help message
-let g:NERDTreeDirArrows = 1                 " Enable directory arrows
+" let g:loaded_netrw = 1                      " Disable netrw
+" let g:loaded_netrwPlugin = 1                " Disable netrw
+" let g:NERDTreeHijackNetrw = 0               " Hijack netrw
+" let g:NERDTreeShowLineNumbers = 0           " Disable line numbers
+" let g:NERDTreeMinimalUI = 1                 " Disable help message
+" let g:NERDTreeDirArrows = 1                 " Enable directory arrows
 
 " use special powerline font
 let g:Powerline_symbols = 'fancy'
@@ -60,3 +60,25 @@ endfunction
 
 " force quickfix to take up all the bottom of the screen
 autocmd FileType qf wincmd J
+
+" " VimFiler
+" let g:vimfiler_as_default_explorer = 1
+" let g:vimfiler_safe_mode_by_default = 0
+"
+" autocmd FileType vimfiler call s:vimfiler_settings()
+" function! s:vimfiler_settings()
+"   nmap <buffer><expr> <CR> vimfiler#smart_cursor_map("\<Plug>(vimfiler_cd_file)","\<Plug>(vimfiler_edit_file)")
+" endfunction
+
+autocmd FileType netrw call s:netrw_my_settings()
+function! s:netrw_my_settings()
+endfunction
+
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc
+let g:netrw_list_hide =  '^\.[^\.],'
+let g:netrw_list_hide .= '\.pyc$,'
+let g:netrw_list_hide .= '\.o$,\.obj$,'
+let g:netrw_list_hide .= '\.a$,\.so$,\.lib$,\.dll$,'
+let g:netrw_list_hide .= '\.pyc\s\+,'
+let g:netrw_list_hide .= '\.o\s\+,\.obj\s\+,'
+let g:netrw_list_hide .= '\.a\s\+,\.so\s\+,\.lib\s\+,\.dll\s\+,'
