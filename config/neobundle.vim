@@ -2,7 +2,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -69,15 +69,12 @@ NeoBundle 'mustache/vim-mustache-handlebars'
 
 "
 " " Colours
-" NeoBundle 'twe4ked/vim-colorscheme-switcher'
-" NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'lengarvey/base16-vim'
-NeoBundle 'vim-scripts/candy.vim'
+NeoBundle 'hukl/Smyck-Color-Scheme/'
 
 " plugin tools
 NeoBundle 'vim-scripts/Decho'
+
+call neobundle#end()
 
 filetype plugin indent on     " Required!
 "
