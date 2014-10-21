@@ -34,6 +34,7 @@ let g:rspec_command = "Dispatch rspec {spec}"
 
 let g:vroom_use_dispatch = 1
 let g:vroom_use_colors = 0
+let g:vroom_clear_screen = 0
 
 let g:dispatch_compilers = {
   \ 'bundle exec': ''}
