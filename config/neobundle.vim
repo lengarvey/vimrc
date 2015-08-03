@@ -38,6 +38,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'mattn/emmet-vim'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 
@@ -50,6 +51,8 @@ NeoBundle 'tpope/vim-vinegar'
 " Command dispatch/background
 NeoBundle 'tpope/vim-dispatch'
 
+NeoBundle 'vim-scripts/SyntaxRange'
+
 " Test running
 " NeoBundle 'thoughtbot/vim-rspec'
 NeoBundle 'skalnik/vim-vroom'
@@ -60,12 +63,14 @@ NeoBundle 'haml.zip'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'yaymukund/vim-rabl'
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'tpope/vim-markdown'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle "pangloss/vim-javascript"
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'Keithbsmiley/rspec.vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'tpope/vim-git'
+NeoBundle 'slim-template/vim-slim'
 
 "
 " " Colours
