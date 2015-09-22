@@ -87,6 +87,12 @@ nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
 " map <Leader>R :wa<CR>:call RunNearestSpec()<CR>
 " map <Leader>l :wa<CR>:call RunLastSpec()<CR>
 " map <Leader>a :wa<CR>:call RunAllSpecs()<CR>
+"
+nmap <silent> <leader>R :TestNearest<CR>
+nmap <silent> <leader>r :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 map <silent> <F4> :set number!<CR>
 

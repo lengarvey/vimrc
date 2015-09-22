@@ -32,10 +32,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:rspec_command = "Dispatch rspec {spec}"
 
-let g:vroom_use_dispatch = 1
-let g:vroom_use_colors = 0
-let g:vroom_clear_screen = 0
-
 let g:dispatch_compilers = {
   \ 'bundle exec': ''}
 
@@ -83,3 +79,6 @@ let g:netrw_list_hide .= '\.a$,\.so$,\.lib$,\.dll$,'
 let g:netrw_list_hide .= '\.pyc\s\+,'
 let g:netrw_list_hide .= '\.o\s\+,\.obj\s\+,'
 let g:netrw_list_hide .= '\.a\s\+,\.so\s\+,\.lib\s\+,\.dll\s\+,'
+
+" testing strategy
+let test#strategy = "dispatch"

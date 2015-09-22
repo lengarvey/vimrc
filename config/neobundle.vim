@@ -55,7 +55,8 @@ NeoBundle 'vim-scripts/SyntaxRange'
 
 " Test running
 " NeoBundle 'thoughtbot/vim-rspec'
-NeoBundle 'skalnik/vim-vroom'
+" NeoBundle 'skalnik/vim-vroom'
+NeoBundle 'janko-m/vim-test'
 
 " Language
 NeoBundle 'tpope/vim-rails'
