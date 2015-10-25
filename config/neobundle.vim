@@ -42,6 +42,8 @@ NeoBundle 'mattn/emmet-vim'
 
 NeoBundle 'terryma/vim-multiple-cursors'
 
+NeoBundle 't9md/vim-ruby-xmpfilter'
+
 " Navigation
 " NeoBundle 'Shougo/vimfiler.vim'
 " NeoBundle 'scrooloose/nerdtree'
