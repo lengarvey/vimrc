@@ -74,6 +74,7 @@ NeoBundle 'Keithbsmiley/rspec.vim'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'elixir-lang/vim-elixir'
 
 "
 " " Colours
