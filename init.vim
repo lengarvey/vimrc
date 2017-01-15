@@ -1,0 +1,1 @@
+/Users/artega/.vimrc

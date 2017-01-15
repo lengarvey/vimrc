@@ -103,9 +103,9 @@ nmap <Leader>pp :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 imap jj <Esc>
 
 " xmpfilter - requires gem install rcodetools
-autocmd FileType ruby nmap <buffer> <Leader>x <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
-autocmd FileType ruby xmap <buffer> <Leader>x <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
-autocmd FileType ruby imap <buffer> <Leader>x <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
+autocmd FileType ruby nmap <buffer> <Leader>e <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <Leader>e <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <Leader>e <Plug>(xmpfilter-mark)<Plug>(xmpfilter-run)
 
 " autocmd FileType ruby nmap <buffer> <Leader>x <Plug>(xmpfilter-run)
 " autocmd FileType ruby xmap <buffer> <Leader>x <Plug>(xmpfilter-run)

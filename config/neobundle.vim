@@ -20,6 +20,7 @@ NeoBundle 'Shougo/vimproc', {
 
 " Now for some bundles
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Shougo/neoyank.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 
@@ -29,6 +30,7 @@ NeoBundle 'sgur/unite-qf'
 " Visual
 " NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 
 " Editing
 NeoBundle 'tomtom/tcomment_vim'
