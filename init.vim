@@ -1,1 +1,1 @@
-/Users/artega/.vimrc
+vimrc
