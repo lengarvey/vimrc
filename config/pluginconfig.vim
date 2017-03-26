@@ -82,3 +82,10 @@ let g:netrw_list_hide .= '\.a\s\+,\.so\s\+,\.lib\s\+,\.dll\s\+,'
 
 " testing strategy
 let test#strategy = "dispatch"
+
+" linting
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = '⨉'
+let g:ale_sign_warning = '⨠'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1

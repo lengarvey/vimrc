@@ -18,3 +18,5 @@ syntax enable
 source $CONFIG/../bundle/Smyck-Color-Scheme/smyck.vim
 
 let g:airline_theme='badwolf'
+
+highlight clear SignColumn

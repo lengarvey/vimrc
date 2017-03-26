@@ -45,6 +45,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'terryma/vim-multiple-cursors'
 
 NeoBundle 't9md/vim-ruby-xmpfilter'
+NeoBundle 'w0rp/ale'
 
 " Navigation
 " NeoBundle 'Shougo/vimfiler.vim'
